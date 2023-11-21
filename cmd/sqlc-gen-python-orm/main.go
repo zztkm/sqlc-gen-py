@@ -6,7 +6,7 @@ import (
 	python "github.com/zztkm/sqlc-gen-python-orm/internal"
 )
 
-const version = "0.0.1"
+const version = "0.0.2"
 
 func main() {
 	codegen.Run(python.Generate)
