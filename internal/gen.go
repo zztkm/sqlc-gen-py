@@ -14,10 +14,10 @@ import (
 	"github.com/sqlc-dev/sqlc-go/metadata"
 	"github.com/sqlc-dev/sqlc-go/sdk"
 
-	pyast "github.com/zztkm/sqlc-gen-python-orm/internal/ast"
-	"github.com/zztkm/sqlc-gen-python-orm/internal/inflection"
-	"github.com/zztkm/sqlc-gen-python-orm/internal/poet"
-	pyprint "github.com/zztkm/sqlc-gen-python-orm/internal/printer"
+	pyast "github.com/zztkm/sqlc-gen-py/internal/ast"
+	"github.com/zztkm/sqlc-gen-py/internal/inflection"
+	"github.com/zztkm/sqlc-gen-py/internal/poet"
+	pyprint "github.com/zztkm/sqlc-gen-py/internal/printer"
 )
 
 type Constant struct {

@@ -3,7 +3,7 @@ package main
 import (
 	"github.com/sqlc-dev/sqlc-go/codegen"
 
-	python "github.com/zztkm/sqlc-gen-python-orm/internal"
+	python "github.com/zztkm/sqlc-gen-py/internal"
 )
 
 const version = "0.0.2"

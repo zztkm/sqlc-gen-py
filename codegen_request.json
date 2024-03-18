@@ -8,8 +8,6 @@
     "queries": [
       "_examples/query.sql"
     ],
-    "rename": {},
-    "overrides": [],
     "codegen": {
       "out": "",
       "plugin": "",
@@ -66031,6 +66029,7 @@
       "insert_into_table": null
     }
   ],
-  "sqlc_version": "v1.23.0",
-  "plugin_options": "eyJvdXQiOiIuIn0="
+  "sqlc_version": "v1.25.0",
+  "plugin_options": "eyJvdXQiOiIuIn0=",
+  "global_options": ""
 }

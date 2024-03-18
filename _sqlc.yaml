@@ -2,7 +2,7 @@ version: '2'
 plugins:
 - name: py
   wasm:
-    url: file://dist/sqlc-gen-python-orm.wasm
+    url: file://dist/sqlc-gen-py.wasm
     sha256: $WASM_SHA256
 sql:
 - schema: "_examples/schema.sql"

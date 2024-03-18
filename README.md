@@ -1,15 +1,15 @@
-# sqlc-gen-python-orm
+# sqlc-gen-py
 
-sqlc-gen-python-orm is a plugin for [sqlc](https://sqlc.dev/) that generates an ORM (now, support SQLAlchemy only) for Python.
+sqlc-gen-py is a plugin for [sqlc](https://sqlc.dev/) that generates an ORM (now, support SQLAlchemy only) for Python.
 
-This softwaer forked from [sqlc-gen-python](https://github.com/sqlc-dev/sqlc-gen-python) and modified to generate ORM.
+This softwaer forked from [sqlc-gen-python](https://github.com/sqlc-dev/sqlc-gen-python) and modified to generate ORM and MySQL support.
 
 ## Usage
 
 get sha256 hash of wasm file
 
 ```bash
-curl -sSL https://github.com/veltiosoft/sqlc-gen-python-orm/releases/download/v0.0.1/sqlc-gen-python-orm.wasm.sha256
+curl -sSL https://github.com/zztkm/sqlc-gen-py/releases/download/v0.0.1/sqlc-gen-py.wasm.sha256
 ```
 
 add plugin to sqlc.yaml
@@ -18,19 +18,19 @@ version: '2'
 plugins:
 - name: py
   wasm:
-    url: https://github.com/veltiosoft/sqlc-gen-python-orm/releases/download/v0.0.1/sqlc-gen-python-orm.wasm
+    url: https://github.com/zztkm/sqlc-gen-py/releases/download/v0.0.2/sqlc-gen-py.wasm
     sha256: <sha256 hash>
 sql:
 - schema: "schema.sql"
   queries: "query.sql"
-  engine: postgresql
+  engine: mysql
   codegen:
-  - out: src/authors
+  - out: gen/sqlc
     plugin: py
     options:
       package: .
       emit_sync_querier: true
-      emit_async_querier: true
+      emit_sqlalchemy_models: false
 ```
 
 ## Refs
