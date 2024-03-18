@@ -9,7 +9,7 @@ This softwaer forked from [sqlc-gen-python](https://github.com/sqlc-dev/sqlc-gen
 get sha256 hash of wasm file
 
 ```bash
-curl -sSL https://github.com/zztkm/sqlc-gen-py/releases/download/v0.0.1/sqlc-gen-py.wasm.sha256
+curl -sSL https://github.com/zztkm/sqlc-gen-py/releases/download/v0.0.2/sqlc-gen-py.wasm.sha256
 ```
 
 add plugin to sqlc.yaml
